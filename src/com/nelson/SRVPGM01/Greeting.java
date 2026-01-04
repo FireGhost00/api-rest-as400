@@ -12,8 +12,9 @@ public class Greeting {
 
     String systenName = "PUB400.COM";
     String userName = "NGOMEZ10";
-    String password = "ngas2025";
-    String path = "/QSYS.LIB/NGOMEZ101.LIB/SRVPGM01.SRVPGM";
+    String pass = "*********";
+    char[] password = pass.toCharArray();
+    String path = "/QSYS.LIB/%LIBL%.LIB/SRVPGM01.SRVPGM";
     AS400 as400 = new AS400(systenName, userName, password);
 
     String result = "";
@@ -24,7 +25,7 @@ public class Greeting {
             pcml.setPath("GREETING", path);
             //asignar valores de entrada
             pcml.setStringValue("GREETING.IN_NAME",name);
-            pcml.setStringValue("GREETING.OUT_GREETING","");
+            //pcml.setStringValue("GREETING.OUT_GREETING","");
 
             if(pcml.callProgram("GREETING")){
                 //recuperar valores de salida

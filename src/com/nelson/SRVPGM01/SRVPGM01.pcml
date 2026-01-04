@@ -4,7 +4,7 @@
    <!-- source: /home/NGOMEZ10/builds/HELLOAPI/qsrvsrc/SRVPGM01.rpgle -->
    <!-- 23 -->
    <program name="GREETING" entrypoint="GREETING">
-      <data name="IN_NAME" type="char" length="10" usage="inputoutput" />
-      <data name="OUT_GREETING" type="char" length="100" usage="inputoutput" />
+      <data name="IN_NAME" type="char" length="10" usage="input" />
+      <data name="OUT_GREETING" type="char" length="100" usage="output" />
    </program>
 </pcml>
